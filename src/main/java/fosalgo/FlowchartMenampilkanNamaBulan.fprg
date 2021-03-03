@@ -2,18 +2,47 @@
 <flowgorithm fileversion="2.11">
     <attributes>
         <attribute name="name" value=""/>
-        <attribute name="authors" value="VD1"/>
+        <attribute name="authors" value="Isman"/>
         <attribute name="about" value=""/>
-        <attribute name="saved" value="2021-03-01 06:33:35 AM"/>
-        <attribute name="created" value="VkQxO0RFU0tUT1AtSzE0UVJDMjsyMDIxLTAzLTAxOzA2OjMwOjM0IEFNOzI0OTY="/>
-        <attribute name="edited" value="VkQxO0RFU0tUT1AtSzE0UVJDMjsyMDIxLTAzLTAxOzA2OjMzOjM1IEFNOzU7MjYxMg=="/>
+        <attribute name="saved" value="2021-03-01 10:48:12 AM"/>
+        <attribute name="created" value="SXNtYW47REVTS1RPUC1JMERPRFVHOzIwMjEtMDMtMDE7MDk6MDk6MjMgQU07Mjg0MA=="/>
+        <attribute name="edited" value="SXNtYW47REVTS1RPUC1JMERPRFVHOzIwMjEtMDMtMDE7MDk6NDg6MTIgQU07MjsyOTUw"/>
     </attributes>
     <function name="Main" type="None" variable="">
         <parameters/>
         <body>
-            <declare name="n" type="Integer" array="False" size=""/>
-            <input variable="n"/>
+            <declare name="bulan" type="Integer" array="False" size=""/>
+            <assign variable="bulan" expression="0"/>
+            <input variable="bulan"/>
+            <if expression="bulan &gt;= 1 &amp;&amp; bulan &lt;= 12">
+                <then>
+                    <declare name="arrayBulan" type="String" array="True" size="12"/>
+                    <assign variable="arrayBulan[0]" expression="&quot;Januari&quot;"/>
+                    <assign variable="arrayBulan[1]" expression="&quot;Februari&quot;"/>
+                    <assign variable="arrayBulan[2]" expression="&quot;Maret&quot;"/>
+                    <assign variable="arrayBulan[3]" expression="&quot;April&quot;"/>
+                    <assign variable="arrayBulan[4]" expression="&quot;Mei&quot;"/>
+                    <assign variable="arrayBulan[5]" expression="&quot;Juni&quot;"/>
+                    <assign variable="arrayBulan[6]" expression="&quot;Juli&quot;"/>
+                    <assign variable="arrayBulan[7]" expression="&quot;Agustus&quot;"/>
+                    <assign variable="arrayBulan[8]" expression="&quot;September&quot;"/>
+                    <assign variable="arrayBulan[9]" expression="&quot;Oktober&quot;"/>
+                    <assign variable="arrayBulan[10]" expression="&quot;November&quot;"/>
+                    <assign variable="arrayBulan[11]" expression="&quot;Desember&quot;"/>
+                    <declare name="i" type="Integer" array="False" size=""/>
+                    <for variable="i" start="0" end="3" direction="inc" step="1">
+                        <output expression="arrayBulan[bulan - 1]" newline="True"/>
+                        <assign variable="bulan" expression="bulan + 1"/>
+                        <if expression="bulan &gt; 12">
+                            <then>
+                                <assign variable="bulan" expression="1"/>
+                            </then>
+                            <else/>
+                        </if>
+                    </for>
+                </then>
+                <else/>
+            </if>
         </body>
     </function>
 </flowgorithm>
-
