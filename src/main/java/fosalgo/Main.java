@@ -1,94 +1,90 @@
-import  java.util.Scanner ;
- kelas  umum Utama {
- private  static  final  Scanner input =  new  Scanner ( System . in);
- public  static  void  main ( String [] args ) {
- Scanner sc =  Scanner baru  ( System . In );
+package fosalgo;
 
- // TULISKAN KODEMU DIBAWAH INI
- Sistem . keluar . println ( " Masukkan Bulan " );
- int bulan;
+import java.util.Scanner;
 
-bulan = masukan . nextInt ();
- if (bulan ==  1 )
- {
- Sistem . keluar . println ( " Januari " );
- Sistem . keluar . println ( " Februari " );
- Sistem . keluar . println ( " Maret " );
- Sistem . keluar . println ( " April " );
- }
- if (bulan ==  2 )
- {
- Sistem . keluar . println ( " Februari " );
- Sistem . keluar . println ( " Maret " );
- Sistem . keluar . println ( " April " );
- Sistem . keluar . println ( " Mei " );
- }
- if (bulan ==  3 )
- {
- Sistem . keluar . println ( " Maret " );
- Sistem . keluar . println ( " April " );
- Sistem . keluar . println ( " Mei " );
- Sistem . keluar . println ( " Juni " );
- }
- if (bulan ==  4 )
- {
- Sistem . keluar . println ( " April " );
- Sistem . keluar . println ( " Mei " );
- Sistem . keluar . println ( " Juni " );
- Sistem . keluar . println ( " Juli " );
- }
- if (bulan ==  5 )
- {
- Sistem . keluar . println ( " Mei " );
- Sistem . keluar . println ( " Juni " );
- Sistem . keluar . println ( " Juli " );
- Sistem . keluar . println ( " Agustus " );
- }
- if (bulan ==  6 )
- {
- Sistem . keluar . println ( " Juni " );
- Sistem . keluar . println ( " Juli " );
- Sistem . keluar . println ( " Agustus " );
- Sistem . keluar . println ( " September " );
- }
- if (bulan ==  7 )
- {
- Sistem . keluar . println ( " Juli " );
- Sistem . keluar . println ( " Agustus " );
- Sistem . keluar . println ( " September " );
- Sistem . keluar . println ( " Oktober " );
- }
- if (bulan ==  8 )
- {
- Sistem . keluar . println ( " Agustus " );
- Sistem . keluar . println ( " September " );
- Sistem . keluar . println ( " Oktober " );
- Sistem . keluar . println ( " November " );
- }
- if (bulan ==  9 )
- {
- Sistem . keluar . println ( " September " );
- Sistem . keluar . println ( " Oktober " );
- Sistem . keluar . println ( " November " );
- Sistem . keluar . println ( " Desember " );
- }
- if (bulan ==  10 )
- {
- Sistem . keluar . println ( " Oktober " );
- Sistem . keluar . println ( " November " );
- Sistem . keluar . println ( " Desember " );
- Sistem . keluar . println ( " Januari " );
- }
- if (bulan ==  11 )
- {
- Sistem . keluar . println ( " November " );
- Sistem . keluar . println ( " Desember " );
- Sistem . keluar . println ( " Januari " );
- Sistem . keluar . println ( " Februari " );
- }
- if (bulan ==  12 )
- {
- Sistem . keluar . println ( " Desember " );
- Sistem . keluar . println ( " Januari " );
- Sistem . keluar . println ( " Februari " );
- Sistem .
+/**
+ *
+ * @author Sugiarto Cokrowibowo
+ */
+public class Main {
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+        
+        //TULISKAN KODEMU DIBAWAH INI
+        if (n == 1) {
+          System.out.println(" Januari ");
+          System.out.println(" Februari ");
+          System.out.println(" Maret ");
+          System.out.println(" April ");
+        }
+        if (n == 2) {
+          System.out.println(" Februari ");
+          System.out.println(" Maret ");
+          System.out.println(" April ");
+          System.out.println(" Mei ");
+        }
+        if (n == 3) {
+          System.out.println(" Maret ");
+          System.out.println(" April ");
+          System.out.println(" Mei ");
+          System.out.println(" Juni ");
+        }
+        if (n == 4) {
+          System.out.println(" April ");
+          System.out.println(" Mei ");
+          System.out.println(" Juni ");
+          System.out.println(" Juli ");
+        }
+        if (n == 5) {
+          System.out.println(" Mei ");
+          System.out.println(" Juni ");
+          System.out.println(" Juli ");
+          System.out.println(" Agustus ");
+        }
+        if (n == 6) {
+          System.out.println(" Juni ");
+          System.out.println(" Juli ");
+          System.out.println(" Agustus ");
+          System.out.println(" September ");
+        }
+        if (n == 7) {
+          System.out.println(" Juli ");
+          System.out.println(" Agustus ");
+          System.out.println(" September ");
+          System.out.println(" Oktober ");
+        }
+        if (n == 8) {
+          System.out.println(" Agustus ");
+          System.out.println(" September ");
+          System.out.println(" Oktober ");
+          System.out.println(" November ");
+        }
+        if (n == 9) {
+          System.out.println(" September ");
+          System.out.println(" Oktober ");
+          System.out.println(" November ");
+          System.out.println(" Desember ");
+        }
+        if (n == 10) {
+          System.out.println(" Oktober ");
+          System.out.println(" November ");
+          System.out.println(" Desember ");
+          System.out.println(" Januari ");
+        }
+        if (n == 11) {
+          System.out.println(" November ");
+          System.out.println(" Desember ");
+          System.out.println(" Januari ");
+          System.out.println(" Februari ");
+        }
+        if (n == 12) {
+          System.out.println(" Desember ");
+          System.out.println(" Januari ");
+          System.out.println(" Februari ");
+          System.out.println(" Maret ");
+        }
+    }
+
+}
